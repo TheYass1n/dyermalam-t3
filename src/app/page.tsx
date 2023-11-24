@@ -1,6 +1,8 @@
 import Link from "next/link";
 
 import { CreatePost } from "@/app/_components/create-post";
+import { Button } from "@/components/ui/button"
+
 import { getServerAuthSession } from "@/server/auth";
 import { api } from "@/trpc/server";
 
@@ -57,6 +59,8 @@ export default async function Home() {
         </div>
 
         <CrudShowcase />
+        <Button variant="outline">Button</Button>
+
       </div>
     </main>
   );
